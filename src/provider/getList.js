@@ -5,15 +5,16 @@ import axios from 'axios';
 const apiKey = "43a598c3ece17bd4d70f41a3ba47d9a5";
 const apiUrl = 'https://api.themoviedb.org/3';
 const nowPlayingUrl = `${apiUrl}/movie/now_playing`;
-const nowPopular = `${apiUrl}/discover/movie?primary_release_date.gte=2014-09-15&primary_release_date.lte=2014-10-22`;
+const nowTrending = `${apiUrl}/trending/all/day?api_key=${apiKey}`;
 
 const httpClient = fetchUtils.fetchJson;
 
 export default {
     getList: async (resource, params) => {
-        if(resource === "moviepopular") {
+        console.log('params',params);
+        if(resource === "trending") {
             try {
-                const {data} = await axios.get(nowPopular, {
+                const {data} = await axios.get(nowTrending, {
                     params: {
                         api_key: apiKey,
                         language: 'en_US',
@@ -36,7 +37,7 @@ export default {
                 return {data: modifiedData, total: modifiedData.total_pages};
                 
             } catch (error) {}
-        } else if(resource === "movieplayingnow") {
+        } else if(resource === "movie") {
             try {
                 const {data} = await axios.get(nowPlayingUrl, {
                     params: {
