@@ -8,10 +8,12 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import { Button } from 'react-admin';
+import { doc, deleteDoc } from 'firebase/firestore';
+
 
 export function UserList() {
     const ref = database.collection('userLogin');
-    console.log(888,'ref :',ref);
 
     const [data, setData] = useState([]);
     const [loader, setLoader] = useState(false);
@@ -20,7 +22,10 @@ export function UserList() {
       ref.onSnapshot((querySnapshot) => {
         const items = [];
         querySnapshot.forEach((doc) => {
-          items.push(doc.data())
+          items.push({
+            data: doc.data(),
+            id: doc.id
+          })
         })
         setData(items);
         setLoader(false);
@@ -29,31 +34,45 @@ export function UserList() {
 
     useEffect(() => {
       getData();
-    },[]);
+    },[data]);
+
+    const handleDelete = (id) => {
+      const docRef = doc(database, 'userLogin', id);
     
+      deleteDoc(docRef)
+      .then(() => {
+          console.log('Document deleted');
+      })
+      .catch(error => console.log(error.message))
+      
+    }
+
+
     return(
         <TableContainer component={Paper}>
-              <Table sx={{ minWidth: 650 }} aria-label="simple table">
+              <Table sx={{ minWidth: 650 }} aria-label="simple table" >
                 <TableHead>
                   <TableRow>
                     <TableCell>User ID</TableCell>
                     <TableCell>Name</TableCell>
                     <TableCell>Email</TableCell>
                     <TableCell>Role</TableCell>
+                    <TableCell>Action</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
                   {loader === false && (data.map((user) => (
                     <TableRow
-                      key={user.uid}
+                      key={user.data.uid}
                       sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                     >
                       <TableCell component="th" scope="row">
-                        {user.uid}
+                        {user.data.uid}
                       </TableCell>
-                      <TableCell>{user.name}</TableCell>
-                      <TableCell>{user.email}</TableCell>
-                      <TableCell>{user.role}</TableCell>
+                      <TableCell>{user.data.name}</TableCell>
+                      <TableCell>{user.data.email}</TableCell>
+                      <TableCell>{user.data.role}</TableCell>
+                      <TableCell><Button onClick={() => handleDelete(user.id) } style={{ backgroundColor: 'lightgray' }} label="delete" redirect={false}/></TableCell>
                     </TableRow>
                   )))}
                 </TableBody>

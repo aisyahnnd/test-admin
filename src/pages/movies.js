@@ -1,18 +1,22 @@
 import * as React from "react";
-import { List, Datagrid, TextField, ImageField, TextInput, SearchInput, ReferenceInput, SelectInput } from 'react-admin';
+import { 
+    List,
+    Datagrid,
+    TextField,
+    ImageField,
+    TextInput,
+    Filter,
+} from 'react-admin';
 import '../App.css';
-import { FilterLiveSearch } from 'react-admin';
 
-const postFilters = [
-    <TextInput source="title" label="Search" alwaysOn />,
-    // <FilterLiveSearch source="title" />
-    // <ReferenceInput source="rating" label="Rating" reference="movies">
-    //     <SelectInput optionText="rating" />
-    // </ReferenceInput>,
-];
+const PostFilter = (props) => (
+    <Filter {...props}>
+      <TextInput label="Search" source="title" alwaysOn />
+    </Filter>
+);
 
 export const MovieList = (props) => (
-    <List {...props} filters={postFilters}>
+    <List {...props} filters={<PostFilter />}>
         <Datagrid>
             <TextField source="id" />
             <TextField source="title" />
