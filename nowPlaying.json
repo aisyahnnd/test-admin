@@ -1,0 +1,363 @@
+{
+    "dates": {
+        "maximum": "2022-06-04",
+        "minimum": "2022-04-17"
+    },
+    "page": 67,
+    "results": [
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [],
+            "id": 964574,
+            "original_language": "xx",
+            "original_title": "Vita in petto avrò",
+            "overview": "A troupe of bodies in trance. Frenzied figures against a white brick wall that is colder than death.",
+            "popularity": 0.6,
+            "poster_path": "/Aa6IpMEQj4aYDMaNsRcxQooFTE9.jpg",
+            "release_date": "2022-04-20",
+            "title": "Vita in petto avrò",
+            "video": false,
+            "vote_average": 0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [],
+            "id": 964570,
+            "original_language": "es",
+            "original_title": "Las almendras amargas",
+            "overview": "After hearing in the news about the case of Yiya Murano, a woman who poisoned her friends, a bored housewife begins to suspect the excessive hospitality of her new neighbor.",
+            "popularity": 0.6,
+            "poster_path": "/o7M9sAX4wSqKKRh21kCNX8PAulv.jpg",
+            "release_date": "2022-04-21",
+            "title": "Bitter almonds",
+            "video": false,
+            "vote_average": 0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [],
+            "id": 964551,
+            "original_language": "es",
+            "original_title": "Lo que vieron aquellos ojos",
+            "overview": "Collective film made from digitalized footage from the collection of Argentinian nitrate films of the Museo del Cine Pablo Ducrós Hicken, made on the occasion of its anniversary.",
+            "popularity": 0.6,
+            "poster_path": "/zPNxpFnYMhpFAXQIAtopMAhOIDJ.jpg",
+            "release_date": "2022-04-22",
+            "title": "What those eyes saw",
+            "video": false,
+            "vote_average": 0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                99
+            ],
+            "id": 964549,
+            "original_language": "es",
+            "original_title": "Alfredo Arias, el hombre de las mil y una cabezas",
+            "overview": "Alfredo Arias is an Argentinian artist whose nephew decides to follow him around through one year of work to study his creations and make this documentary.",
+            "popularity": 0.745,
+            "poster_path": "/upvIDmXxKxmi7P9zzuzMpOyvjjr.jpg",
+            "release_date": "2022-04-20",
+            "title": "Alfredo Arias, the man of a thousand and one heads",
+            "video": false,
+            "vote_average": 0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [],
+            "id": 964137,
+            "original_language": "en",
+            "original_title": "The Gondoliers",
+            "overview": "In a flight of the satirical whimsy so typical of G&S, two happy-go-lucky gondoliers discover that one of them is, in fact, heir to the throne of a distant kingdom. True to their (adopted) Republican roots, they set off together to rule in idealistic, if somewhat chaotic, style... Director Stuart Maunder, Artistic Director at State Opera South Australia, teams up with designer Dick Bird (The Mikado 2016) to stage a production that is fast, furious and full of fun.",
+            "popularity": 0.6,
+            "poster_path": "/hDn0ZLBbpB74syvy13xNaFuvmFK.jpg",
+            "release_date": "2022-04-17",
+            "title": "The Gondoliers",
+            "video": false,
+            "vote_average": 0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/e5SVAlOR1iiFWDlHUwFZJekUM1L.jpg",
+            "genre_ids": [
+                80,
+                9648
+            ],
+            "id": 963163,
+            "original_language": "de",
+            "original_title": "Zurück zum Absender",
+            "overview": "One day can change the course of your whole life. Julian knows that. He lives in a small apartement with his father, who has been drinking ever since the death of his wife. However Julian found stability in his two good friends Andreas and Sophia. One day he suddenly finds something in the park, which he hesitantly takes with him. But he doesn't yet know how this find will drastically change his life. The first film production from 'filmABdate'.",
+            "popularity": 0.6,
+            "poster_path": "/sXgNa89qsHNNIHKhePk0AYpc0Qu.jpg",
+            "release_date": "2022-04-17",
+            "title": "Zurück zum Absender",
+            "video": false,
+            "vote_average": 0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                16
+            ],
+            "id": 961649,
+            "original_language": "ko",
+            "original_title": "아파트",
+            "overview": "Apartments at night, people are all spending the night in their own houses. But the peace is short-lived. A burglar breaks into the apartment.",
+            "popularity": 0.6,
+            "poster_path": null,
+            "release_date": "2022-04-27",
+            "title": "Apartment",
+            "video": false,
+            "vote_average": 0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [],
+            "id": 961062,
+            "original_language": "es",
+            "original_title": "Macadam",
+            "overview": "",
+            "popularity": 0.6,
+            "poster_path": null,
+            "release_date": "2022-04-19",
+            "title": "Macadam",
+            "video": false,
+            "vote_average": 0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [],
+            "id": 960752,
+            "original_language": "es",
+            "original_title": "Ahora ya sé dónde encontrarte",
+            "overview": "",
+            "popularity": 0.6,
+            "poster_path": "/qa73havf8PiqGdt8vUOvnRCk8o4.jpg",
+            "release_date": "2022-04-19",
+            "title": "Ahora ya sé dónde encontrarte",
+            "video": false,
+            "vote_average": 0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [],
+            "id": 960027,
+            "original_language": "es",
+            "original_title": "Te mentí",
+            "overview": "",
+            "popularity": 0.6,
+            "poster_path": null,
+            "release_date": "2022-04-19",
+            "title": "Te mentí",
+            "video": false,
+            "vote_average": 2,
+            "vote_count": 1
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                18
+            ],
+            "id": 946361,
+            "original_language": "fi",
+            "original_title": "Sieniä sielulle",
+            "overview": "A lonely mushroom hunter tries to gain a connection to his dead friend by baking a bread using his ashes.",
+            "popularity": 0.6,
+            "poster_path": "/cVRWuFpAgKy3SGUgT0eACfZEXlK.jpg",
+            "release_date": "2021-10-16",
+            "title": "Mushrooms for the Soul",
+            "video": false,
+            "vote_average": 10,
+            "vote_count": 1
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/4rNEqwnXqNs3xM4EujYr4yLL7q5.jpg",
+            "genre_ids": [
+                99
+            ],
+            "id": 937678,
+            "original_language": "es",
+            "original_title": "Alter",
+            "overview": "After being fired from his job, a psychologist and frustrated songwriter begins his career as an imitator of Latino superstar Luis Miguel, gaining local fame while singing someone else's songs as he questions who he wants to be.",
+            "popularity": 0.6,
+            "poster_path": "/5iGARoI8GTtd0JbGeRpOIYHdQqV.jpg",
+            "release_date": "2022-04-18",
+            "title": "Alter",
+            "video": false,
+            "vote_average": 0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/24MFMUOHivt3GkWwUcTT0puAIZ3.jpg",
+            "genre_ids": [
+                16,
+                10751,
+                10402
+            ],
+            "id": 933774,
+            "original_language": "fr",
+            "original_title": "Théo le château d'eau",
+            "overview": "Théo, the village's water tower, is crying his eyes out. To try and understand why he's sad, Robert, a nine-year-old boy, tries to talk to him but Théo takes fright and runs away. He turns up in town, where he gets taunted by the museum, some houses and the church, who don't consider him a real building. But when the town is set ablaze, they all ask for his help!",
+            "popularity": 0.6,
+            "poster_path": "/ytTPHdwEEBqFvl9dBm15tMAfgco.jpg",
+            "release_date": "2022-01-27",
+            "title": "Theo the Water Tower",
+            "video": false,
+            "vote_average": 0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                99
+            ],
+            "id": 910329,
+            "original_language": "en",
+            "original_title": "La Bâche",
+            "overview": "As if fallen out of time, a family is making hay in the French Alps. The mountains here are more than 3,000 metres high. The work of the dairy farmers is not much different than it was 100 years ago on the steep, small meadows.",
+            "popularity": 0.6,
+            "poster_path": null,
+            "release_date": "2022-04-23",
+            "title": "The Tarp",
+            "video": false,
+            "vote_average": 0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/zKDoBvx3apz3B8c2dDIZxLT4a9L.jpg",
+            "genre_ids": [
+                35
+            ],
+            "id": 900070,
+            "original_language": "es",
+            "original_title": "El invento de la Soledad",
+            "overview": "Soledad is trapped in quarantine with a new partner she has recently been dating. The objects of his old relationship still flood his house and denounce a presence that has not disappeared. One night, the memory of the ex-boyfriend materializes in Soledad's bed and the three of them wake up in a bizarre and uncomfortable situation. From that moment they cannot free themselves from the memory and the three end up living in confinement together and trying to support each other.",
+            "popularity": 0.6,
+            "poster_path": "/auQwBrDbJqHpATJtms2umuMO999.jpg",
+            "release_date": "2022-03-20",
+            "title": "The invention of Soledad",
+            "video": false,
+            "vote_average": 0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                37,
+                35,
+                12
+            ],
+            "id": 884057,
+            "original_language": "de",
+            "original_title": "Hopfen, Malz und Blei",
+            "overview": "",
+            "popularity": 0.6,
+            "poster_path": "/qMtYHEaxNnxr9IIdDgNgNCGxtuH.jpg",
+            "release_date": "2021-11-11",
+            "title": "Hopfen, Malz und Blei",
+            "video": false,
+            "vote_average": 0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                27,
+                35
+            ],
+            "id": 882071,
+            "original_language": "ja",
+            "original_title": "...LOVEHOTEL… ~The Guide to Japanese Midnight Culture~",
+            "overview": "An affair couple in a love hotel in Japan draws the activity of a medium who came to investigate the ghost appearing in the room.",
+            "popularity": 0.6,
+            "poster_path": "/vmST0ZAEujDeQeMda7mFAGXbBWb.jpg",
+            "release_date": "2022-04-17",
+            "title": "...LOVEHOTEL…~The Guide to Japanese Midnight Culture~",
+            "video": false,
+            "vote_average": 0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                99
+            ],
+            "id": 879287,
+            "original_language": "sw",
+            "original_title": "Amuka - L'éveil des paysans congolais",
+            "overview": "The Democratic Republic of Congo could feed almost 1 in 2 people on Earth. Yet one in six Congolese people suffer from hunger. Yet one in two Congolese suffers from moderate acute malnutrition. Yet agriculture accounts for 70% of the population there. Faced with this paradox, the peasants regroup in agricultural cooperatives. A handful of them share their daily lives with us, that of all those they represent. Even if they don't know each other, live thousands of hundreds of kilometers from each other, participate in different agricultural sectors, their voices resonate in this powerful, sensitive and sincere documentary.",
+            "popularity": 0.6,
+            "poster_path": null,
+            "release_date": "2021-10-14",
+            "title": "Amuka",
+            "video": false,
+            "vote_average": 0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/t2A7qKSj7Mt73A6q33BXIIL0YBQ.jpg",
+            "genre_ids": [
+                99
+            ],
+            "id": 875405,
+            "original_language": "it",
+            "original_title": "Venezia - Infinita avanguardia",
+            "overview": "1600 years after its legendary foundation, Venice continues to be unique: the urban environment, made of stone, earth, and water, and for its legendary history. But, above all, Venice is unique for its identity as a city of oxymorons, holding together opposing DNA in a formidable contradiction: the allure of decadence, and the frenzy of the avant-garde. VENEZIA-INFINITA AVANGUARDIA is a labyrinth of stories, works of art, palaces, celebrities of social and cultural life, places, extravagances, and traditions. It's a sensory experience made of lights, water, and music. Beside connections and suggestions, testaments flow by of art historians, urbanists, sociologists, philosophers, curators, musicians, writers, journalists, artists, and our contemporaries.",
+            "popularity": 0.789,
+            "poster_path": "/tyW8YDfCXcRctSA4xJln6Fi66q3.jpg",
+            "release_date": "2021-10-11",
+            "title": "Venice: Infinitely Avant-Garde",
+            "video": false,
+            "vote_average": 6.8,
+            "vote_count": 4
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                35
+            ],
+            "id": 864053,
+            "original_language": "ja",
+            "original_title": "愛なのに",
+            "overview": "Koji runs a second-hand bookstore. He likes female drummer Ichihana, but, suddenly, female high school student Misaki appears in front of him and keeps confesses her feelings for him.",
+            "popularity": 0.6,
+            "poster_path": "/2oUkTPdONv9hR67XqqYzgmrI6Aj.jpg",
+            "release_date": "2022-02-25",
+            "title": "Love Nonetheless",
+            "video": false,
+            "vote_average": 8,
+            "vote_count": 1
+        }
+    ],
+    "total_pages": 68,
+    "total_results": 1345
+}

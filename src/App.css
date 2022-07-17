@@ -38,8 +38,12 @@
 }
 
 .thumbNailView img {
-  width: 50%;
-  padding: 0;
+  width: 150px;
+  border-radius: 10px;
+}
+
+.thumbNailViewShow img{
+  width: 200px;
   border-radius: 10px;
 }
 

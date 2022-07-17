@@ -1,82 +1,80 @@
-import * as React from "react";
-import { useState, useEffect } from 'react';
-import { database } from '../FIREBASE_CONFIG';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
-import { Button } from 'react-admin';
-import { doc, deleteDoc } from 'firebase/firestore';
+import React from 'react';
+import {
+  Datagrid,
+  List,
+  Show,
+  Filter,
+  SimpleShowLayout,
+  TextField,
+  TextInput,
+  ShowButton,
+  DeleteButton,
+  SearchInput,
+  Edit,
+  SimpleForm,
+  required,
+  Create,
+  SelectInput,
+} from 'react-admin';
+import Button from '@mui/material/Button';
+import { EditButton, TopToolbar } from 'react-admin';
 
+const UserShowActions = () => (
+  <TopToolbar>
+    <EditButton />
+  </TopToolbar>
+);
 
-export function UserList() {
-    const ref = database.collection('userLogin');
+const PostFilter = [<SearchInput source="name" alwaysOn />];
 
-    const [data, setData] = useState([]);
-    const [loader, setLoader] = useState(false);
+export const UserList = (props) => (
+  <List {...props} filters={PostFilter}>
+    <Datagrid>
+      <TextField source="id" />
+      <TextField source="name" />
+      <TextField source="email" />
+      <TextField source="role" />
+      <ShowButton label="Show" />
+      <DeleteButton label="Delete" redirect={false} />
+    </Datagrid>
+  </List>
+);
 
-    function getData() {
-      ref.onSnapshot((querySnapshot) => {
-        const items = [];
-        querySnapshot.forEach((doc) => {
-          items.push({
-            data: doc.data(),
-            id: doc.id
-          })
-        })
-        setData(items);
-        setLoader(false);
-      })
-    }
+export const UserShow = (props) => (
+  <Show {...props} actions={<UserShowActions />}>
+    <SimpleShowLayout>
+      <TextField source="id" />
+      <TextField source="name" />
+      <TextField source="email" />
+      <TextField source="role" />
+    </SimpleShowLayout>
+  </Show>
+);
 
-    useEffect(() => {
-      getData();
-    },[data]);
+export const UserEdit = () => (
+  <Edit>
+    <SimpleForm>
+      <TextInput disabled label="Id" source="id" />
+      <TextInput source="name" validate={required()} />
+      <TextInput multiline source="email" validate={required()} />
+    </SimpleForm>
+  </Edit>
+);
 
-    const handleDelete = (id) => {
-      const docRef = doc(database, 'userLogin', id);
-    
-      deleteDoc(docRef)
-      .then(() => {
-          console.log('Document deleted');
-      })
-      .catch(error => console.log(error.message))
-      
-    }
-
-
-    return(
-        <TableContainer component={Paper}>
-              <Table sx={{ minWidth: 650 }} aria-label="simple table" >
-                <TableHead>
-                  <TableRow>
-                    <TableCell>User ID</TableCell>
-                    <TableCell>Name</TableCell>
-                    <TableCell>Email</TableCell>
-                    <TableCell>Role</TableCell>
-                    <TableCell>Action</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {loader === false && (data.map((user) => (
-                    <TableRow
-                      key={user.data.uid}
-                      sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                    >
-                      <TableCell component="th" scope="row">
-                        {user.data.uid}
-                      </TableCell>
-                      <TableCell>{user.data.name}</TableCell>
-                      <TableCell>{user.data.email}</TableCell>
-                      <TableCell>{user.data.role}</TableCell>
-                      <TableCell><Button onClick={() => handleDelete(user.id) } style={{ backgroundColor: 'lightgray' }} label="delete" redirect={false}/></TableCell>
-                    </TableRow>
-                  )))}
-                </TableBody>
-              </Table>
-        </TableContainer>
-    );
-}
+export const UserCreate = () => (
+  <Create>
+    <SimpleForm>
+      <TextInput disabled label="Auto-Id" source="id" />
+      <TextInput source="name" />
+      <TextInput type="email" source="email" />
+      <TextInput type="password" source="password" />
+      <SelectInput
+        source="role"
+        choices={[
+          { id: 'admin', name: 'Admin' },
+          { id: 'user', name: 'User' },
+        ]}
+      />
+    </SimpleForm>
+  </Create>
+);
