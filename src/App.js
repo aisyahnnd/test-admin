@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Admin, Resource } from 'react-admin';
 import MovieFilterIcon from '@mui/icons-material/MovieFilter';
-import Dashboard from './pages/dashboard';
+import Dashboard from './pages/Dashboard';
 import Provider from './provider/getDataProvider';
 import { MovieList, MovieShow } from './pages/movies';
 import { UserList, UserShow, UserEdit, UserCreate } from './pages/users';
